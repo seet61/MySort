@@ -3,7 +3,7 @@ package MySort;
 /**
  * Created by dmitry.arefyev on 21.11.2016.
  */
-public class Box {
+public class Box implements Comparable {
     int a,b;
 
     public Box(int a, int b) {
@@ -30,5 +30,11 @@ public class Box {
     @Override
     public String toString() {
         return "a=" + a + " b=" + b;
+    }
+
+    @Override
+    public int compareTo(Object obj) {
+        Box box = (Box) obj;
+        return this.a*this.b - box.a*box.b;
     }
 }
