@@ -16,8 +16,7 @@ public class MySort {
         }
 
         System.out.println("Sort with first side");
-        System.out.println("Sort with first side");
-        Arrays.sort(data, new CmpBoxBySideA());
+        Arrays.sort(data, new Box.CmpBoxBySideA());
         for (Box di : data) {
             System.out.println("di: " + di);
         }
