@@ -14,8 +14,12 @@ public class Box implements Comparable {
         }
     }
 
+    //Вызов спомогательного класса
+    public static Comparator bySideA() {
+        return new CmpBoxBySideA();
+    }
 
-    int a,b;
+    private int a,b;
 
     public Box(int a, int b) {
         this.a = a;
